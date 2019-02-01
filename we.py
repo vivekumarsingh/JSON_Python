@@ -12,3 +12,5 @@ elif data.status_code !=400:
     print("OK Status") 
 a= data.json()
 print(data.text)
+for data in a['results']:
+    print(data['survey']['title'])
